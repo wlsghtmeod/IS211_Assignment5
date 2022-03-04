@@ -1,6 +1,5 @@
 import csv
 import argparse
-from urllib import request
 
 # Request class defines each request 
 class Request:
@@ -96,6 +95,5 @@ def main(fileName):
         parser = argparse.ArgumentParser(description="Printer Program")
         parser.add_argument("--file", help="Provide path of the file")
         args = parser.parse_args()
-        main(args)
-
-
+        main(args.file)
+        
